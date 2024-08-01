@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+             
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact </a></li>
+              </ul>
+            </nav>
+            <div class="header-text">
+              <p>
+                <span>Front-End Developer</span></p>
+              <h1>Hi, I'm <span>Jasleen Kaur</span> <br><br>Passionate and Driven<br> 3rd-Year Student <br> </h1>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="cursor"></div> -->
+    <div id="cursor-blur"></div>
+
+
+<!--about-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="pic23.png" width="290px" height="400px"  >
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Computer Science graduate seeking a challenging role to apply acquired knowledge and practical experience in theoretical foundations of information processing. Highly-motivated and results-driven, able to work and learn as part of a dedicated team.</p>
+            <div class="tab-titles">
+              <p class="tab-links active-link"onclick="opentab('skills') ">  Skills </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+            
+            </div>
+            <div class="tab-contents active-tab"id="skills">
+              <ul>
+                <li><span>Web-Development</span><br>Front-End Developer</li>
+                <li><span>Machine Learning</span><br>Artificial Intelligence</li>
+                <li><span>Software- Developer</span><br>Building Android/IOS apps</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021-2025</span><br>B.tech From Chitkara-University </li>
+                <li><span>12th cgpa</span><br>80.3</li>
+                <li><span>10th cgpa</span><br>89.6</li>
+              </ul>
+            </div>
+
+
+            <div class="tab-contents" id="achievements">
+              <ul>
+                <li><span>Spark AR</span><br>Created a filter on Instagram </li>
+                <li><span>Hackathon</span><br>Participated in Hack the Mountains</li>
+                <li><span>Research Work</span><br>Published a Research paper </li>
+              </ul>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+
+
+<!--service-->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+       <div>
+        <h2>Web Design</h2>
+        <p>A Web Developer with three years of experience specializing in HTML5, JavaScript.</p>
+        <a href="#">Learn More</a>
+       </div>
+
+
+
+       <div>
+        <h2>Machine Learning</h2>
+        <p>Great knowledge Of Artificial Intelligence and Deep Learning</p>
+        <a href="#">Learn More</a>
+       </div>
+
+
+
+       <div>
+        <h2>App Design</h2>
+        <p>Passionate about innovation and mobile technologies. Developed a new app feature that increased user engagement by 20%. </p>
+        <a href="#">Learn More</a>
+       </div>
+    </div>
+  </div>
+</div>
+
+<
+     <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="web.jpg">
+            <div class="layer">
+              <h3> Chandigarh Architects Website</h3>
+              <p>This Website is for My Father's Workplace .</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="machine.jpg">
+            <div class="layer">
+              <h3> Machine Learning</h3>
+              <p>This Website predicts the weather report for upcoming days .</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="app.jpg">
+            <div class="layer">
+              <h3> Whatsapp Clone</h3>
+              <p>he app connects you to your Loved ones around you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+
+  
+
+
+
+
+  <!----------------contact--------->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa fa-envelope" aria-hidden="true"></i>jasleen2311.be21@chitkara.edu.in</p>
+          <p><i class="fa fa-address-book" aria-hidden="true"></i>6284403141</p>
+          <div class="social-icons">
+            <a href="https://github.com/JasleenKaur30">
+              <i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jasleen-kaur-258430266/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          <a href="resume.pdf"download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <!--Script starting-->
+ <script>
+
+
+
+
+var tablinks=document.getElementsByClassName("tab-links");
+var tabcontents=document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+var blur = document.querySelector("#cursor-blur")
+document.addEventListener("mousemove",function(dets){
+    
+    blur.style.left=dets.x-150+"px"
+    blur.style.top=dets.y-150+"px"
+});
+
+
+ </script>
+</body>
+</html>
